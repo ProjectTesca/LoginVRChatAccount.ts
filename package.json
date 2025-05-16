@@ -4,7 +4,7 @@
   "description": "VRChatアカウントの検証機能を提供するnpmパッケージ",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JanMaki/login-vrchat-account"
+    "url": "git+https://github.com/JanMaki/login-vrchat-account.git"
   },
   "keywords": [
     "vrchat",

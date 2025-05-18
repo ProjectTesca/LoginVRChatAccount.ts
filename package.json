@@ -1,6 +1,6 @@
 {
   "name": "@ProjectTesca/login-vrchat-account",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "VRChatアカウントの検証機能を提供するnpmパッケージ",
   "repository": {
     "type": "git",

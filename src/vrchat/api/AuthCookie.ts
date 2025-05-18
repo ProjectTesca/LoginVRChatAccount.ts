@@ -5,7 +5,7 @@ import { CookieJar } from 'tough-cookie';
 
 // ユーザーIDの正規表現
 const AUTH_COOKIE_REGEX = /^authcookie_[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/;
-const AUTH_COOKIE_DOMAIN = 'vrchat.com';
+const AUTH_COOKIE_DOMAIN = 'api.vrchat.cloud';
 
 /**
  * fetch APIを使用するためのクライアント関数の型

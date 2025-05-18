@@ -192,7 +192,7 @@ async function callVRChatAPI(authCookie: AuthCookie) {
     const client = authCookie.createClient();
 
     // 例: ユーザー情報を取得
-    const response = await client.get('https://vrchat.com/api/1/auth/user');
+    const response = await client.get('https://api.vrchat.cloud/api/1/auth/user');
 
     if (response.ok) {
       const userData = await response.json();
@@ -355,7 +355,7 @@ async function completeAuthenticationExample() {
       console.log('認証クッキーを使用してAPIを呼び出し中...');
 
       const client = authCookie.createClient();
-      const response = await client.get('https://vrchat.com/api/1/auth/user');
+      const response = await client.get('https://api.vrchat.cloud/api/1/auth/user');
 
       if (response.ok) {
         const userData = await response.json();

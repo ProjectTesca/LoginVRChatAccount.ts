@@ -68,7 +68,7 @@ export async function sendRequest(
   const credential = credentialData.toBase64();
 
   try {
-    const response = await fetch('https://vrchat.com/api/1/auth/user', {
+    const response = await fetch('https://api.vrchat.cloud/api/1/auth/user', {
       method: 'GET',
       headers: {
         'Authorization': `Basic ${credential}`,

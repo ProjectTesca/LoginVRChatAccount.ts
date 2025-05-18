@@ -16,7 +16,7 @@ describe('AuthTwoFactorAuth', () => {
     // const mockPost = jest.fn().mockResolvedValue({ ok: true });
     // const mockClient = { post: mockPost };
     // jest.spyOn(AuthCookie.prototype, 'createClient').mockReturnValue(mockClient);
-    
+
     // const uuid = uuidv4();
     // const authCookieValue = `authcookie_${uuid}`;
     // const authCookie = AuthCookie.create(authCookieValue);
@@ -24,7 +24,7 @@ describe('AuthTwoFactorAuth', () => {
     // const result = await sendRequest('123456', TwoFactorType.Totp, authCookie, userAgent);
     // expect(result).toBe(true);
     // expect(mockPost).toHaveBeenCalledWith(
-    //   'https://vrchat.com/api/1/auth/twofactorauth/totp/verify',
+    //   'https://api.vrchat.cloud/api/1/auth/twofactorauth/totp/verify',
     //   { code: '123456' },
     //   { headers: { 'User-Agent': 'TEST_APP/1.0.0' } }
     // );
@@ -36,13 +36,13 @@ describe('AuthTwoFactorAuth', () => {
    */
   test('url_generation', () => {
     // 各TwoFactorTypeに対して期待されるURLのパスを確認します
-    expect(`https://vrchat.com/api/1/auth/twofactorauth/${TwoFactorType.Totp}/verify`)
-      .toBe('https://vrchat.com/api/1/auth/twofactorauth/totp/verify');
-    
-    expect(`https://vrchat.com/api/1/auth/twofactorauth/${TwoFactorType.Otp}/verify`)
-      .toBe('https://vrchat.com/api/1/auth/twofactorauth/otp/verify');
-    
-    expect(`https://vrchat.com/api/1/auth/twofactorauth/${TwoFactorType.EmailOtp}/verify`)
-      .toBe('https://vrchat.com/api/1/auth/twofactorauth/emailOtp/verify');
+    expect(`https://api.vrchat.cloud/api/1/auth/twofactorauth/${TwoFactorType.Totp}/verify`)
+      .toBe('https://api.vrchat.cloud/api/1/auth/twofactorauth/totp/verify');
+
+    expect(`https://api.vrchat.cloud/api/1/auth/twofactorauth/${TwoFactorType.Otp}/verify`)
+      .toBe('https://api.vrchat.cloud/api/1/auth/twofactorauth/otp/verify');
+
+    expect(`https://api.vrchat.cloud/api/1/auth/twofactorauth/${TwoFactorType.EmailOtp}/verify`)
+      .toBe('https://api.vrchat.cloud/api/1/auth/twofactorauth/emailOtp/verify');
   });
 });

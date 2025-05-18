@@ -22,7 +22,7 @@ export async function sendRequest(
   authCookie: AuthCookie,
   userAgent: ClientUserAgent
 ): Promise<boolean> {
-  const url = `https://vrchat.com/api/1/auth/twofactorauth/${twoFactorType}/verify`;
+  const url = `https://api.vrchat.cloud/api/1/auth/twofactorauth/${twoFactorType}/verify`;
 
   // リクエストを作成
   const client = authCookie.createClient();

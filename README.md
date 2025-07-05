@@ -11,9 +11,8 @@ VRChatアカウントの認証機能を提供するnpmパッケージです。VR
 ## インストール
 
 npmを使用してインストールできます：
-> ※ パッケージの公開は現在していないため、こちらの方法は使えません！！！！！！！！！！！！
 ```bash
-npm install login-vrchat-account
+npm install @projecttesca/login-vrchat-account@0.1.1
 ```
 
 ## 基本的な使用方法

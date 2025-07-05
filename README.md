@@ -145,7 +145,3 @@ TOTPを使用してログインします。
 ```typescript
 const result = await loginWithTotp(credentials, userAgent, 'totp_secret');
 ```
-
-## ライセンス
-
-ISC

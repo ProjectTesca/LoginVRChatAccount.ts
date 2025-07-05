@@ -10,6 +10,12 @@ VRChatアカウントの認証機能を提供するnpmパッケージです。VR
 
 ## インストール
 
+`.npmrc`に以下を記述します：
+```
+@projecttesca:registry=https://npm.pkg.github.com
+```
+> 詳細: https://docs.github.com/ja/packages/working-with-a-github-packages-registry/working-with-the-npm-registry
+
 npmを使用してインストールできます：
 ```bash
 npm install @projecttesca/login-vrchat-account@0.1.1
